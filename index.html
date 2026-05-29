@@ -1,1 +1,1116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>เที่ยวกระบี่ 2026 | Krabi Travel Guide</title>
+
+<meta name="description"
+content="รวมที่เที่ยวกระบี่ ทะเลกระบี่ คาเฟ่ ที่พัก และบริการรถเที่ยวกระบี่ พร้อมคนขับมืออาชีพ เดินทางสะดวก ปลอดภัย เที่ยวได้ครบทุกจุดเช็กอินยอดนิยม">
+
+<meta name="keywords"
+content="เที่ยวกระบี่, ทะเลกระบี่, อ่าวนาง, เกาะพีพี, ไร่เลย์, ที่เที่ยวกระบี่, รถเที่ยวกระบี่, คาเฟ่กระบี่">
+
+<meta name="robots" content="index, follow">
+
+<!-- เว้นช่องใส่โลโก้ -->
+<link rel="icon" href="YOUR-LOGO.png">
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<style>
+
+/* ================= RESET ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Prompt',sans-serif;
+
+background:
+linear-gradient(
+180deg,
+#fffdf5 0%,
+#fff8e8 45%,
+#fff4d6 100%
+);
+
+color:#4e4632;
+
+overflow-x:hidden;
+
+line-height:1.7;
+
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:14px 40px;
+
+background:rgba(255,255,255,0.35);
+
+backdrop-filter:blur(18px);
+
+border-bottom:
+1px solid rgba(255,255,255,0.45);
+
+z-index:9999;
+
+}
+
+.logo-area{
+
+display:flex;
+align-items:center;
+gap:14px;
+
+}
+
+/* เว้นช่องโลโก้ */
+
+.logo-img{
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:2px solid #fff;
+
+box-shadow:
+0 0 20px rgba(255,193,7,0.15);
+
+}
+
+/* โลโก้ */
+
+.logo-text h1{
+
+font-size:20px;
+font-weight:600;
+
+color:#c28b00;
+
+}
+
+.logo-text p{
+
+font-size:12px;
+
+color:#9f8850;
+
+}
+
+/* ================= MENU ================= */
+
+.menu{
+
+display:flex;
+gap:22px;
+
+}
+
+.menu a{
+
+text-decoration:none;
+
+font-size:14px;
+font-weight:500;
+
+color:#5e512c;
+
+transition:0.3s;
+
+}
+
+.menu a:hover{
+color:#ffb300;
+}
+
+/* ================= HERO ================= */
+
+header{
+
+position:relative;
+
+width:100%;
+height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+overflow:hidden;
+
+background:
+linear-gradient(
+135deg,
+#fffdf5,
+#fff6df,
+#fff0c4
+);
+
+}
+
+/* เว้นช่องรูปพื้นหลัง */
+
+.hero-bg{
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+opacity:0.14;
+
+filter:
+blur(1px)
+brightness(1.05);
+
+z-index:1;
+
+}
+
+/* Overlay */
+
+.overlay{
+
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(
+to bottom,
+rgba(255,255,255,0.10),
+rgba(255,248,220,0.35),
+rgba(255,241,190,0.45)
+);
+
+z-index:2;
+
+}
+
+/* กล่องข้อความ */
+
+.hero{
+
+position:relative;
+
+z-index:3;
+
+width:90%;
+max-width:860px;
+
+text-align:center;
+
+padding:45px;
+
+border-radius:35px;
+
+background:
+rgba(255,255,255,0.24);
+
+backdrop-filter:blur(14px);
+
+box-shadow:
+0 10px 35px rgba(255,193,7,0.08);
+
+}
+
+/* หัวข้อ */
+
+.hero h2{
+
+font-size:3.1em;
+
+font-weight:600;
+
+color:#b57f00;
+
+margin-bottom:16px;
+
+letter-spacing:1px;
+
+}
+
+/* คำอธิบาย */
+
+.hero p{
+
+font-size:1em;
+
+font-weight:400;
+
+color:#7a6740;
+
+margin-bottom:35px;
+
+}
+
+/* ================= POPUP BUTTONS ================= */
+
+.popup-contact{
+
+display:flex;
+flex-direction:column;
+
+gap:14px;
+
+align-items:center;
+
+}
+
+/* ปุ่ม */
+
+.popup-btn{
+
+position:relative;
+
+width:360px;
+max-width:90%;
+
+padding:13px 22px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-size:15px;
+font-weight:500;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+gap:10px;
+
+overflow:hidden;
+
+color:white;
+
+transition:0.35s;
+
+backdrop-filter:blur(10px);
+
+box-shadow:
+0 8px 25px rgba(0,0,0,0.08);
+
+}
+
+/* เอฟเฟกต์ */
+
+.popup-btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-100%;
+
+width:100%;
+height:100%;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,0.25),
+transparent
+);
+
+transition:0.6s;
+
+}
+
+.popup-btn:hover::before{
+left:100%;
+}
+
+.popup-btn:hover{
+transform:translateY(-4px);
+}
+
+/* ปุ่มโทร */
+
+.call-btn{
+
+background:
+linear-gradient(
+90deg,
+#ef5350,
+#e53935
+);
+
+}
+
+/* LINE */
+
+.line-btn{
+
+background:
+linear-gradient(
+90deg,
+#00c853,
+#43ea7a
+);
+
+}
+
+/* WhatsApp */
+
+.whatsapp-btn{
+
+background:
+linear-gradient(
+90deg,
+#25d366,
+#128c7e
+);
+
+}
+
+/* ================= SECTION ================= */
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.title h2{
+
+font-size:2em;
+
+font-weight:600;
+
+color:#c28b00;
+
+margin-bottom:10px;
+
+}
+
+.title p{
+
+font-size:14px;
+
+color:#8a784d;
+
+}
+
+/* ================= GRID ================= */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+/* ================= CARD ================= */
+
+.card{
+
+background:white;
+
+border-radius:28px;
+
+overflow:hidden;
+
+box-shadow:
+0 8px 22px rgba(0,0,0,0.05);
+
+transition:0.4s;
+
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* เว้นช่องรูป */
+
+.card-img{
+
+width:100%;
+height:230px;
+
+object-fit:cover;
+
+display:block;
+
+background:
+linear-gradient(
+135deg,
+#fff6d8,
+#fffef7
+);
+
+}
+
+/* เนื้อหา */
+
+.card-content{
+padding:24px;
+}
+
+.card-content h3{
+
+font-size:1.3em;
+
+font-weight:600;
+
+color:#b57f00;
+
+margin-bottom:10px;
+
+}
+
+.card-content p{
+
+font-size:14px;
+
+color:#6d644e;
+
+}
+
+/* ================= CONTACT BOX ================= */
+
+.contact-box{
+
+padding:55px;
+
+border-radius:35px;
+
+background:
+linear-gradient(
+135deg,
+rgba(255,255,255,0.60),
+rgba(255,248,220,0.92)
+);
+
+backdrop-filter:blur(12px);
+
+box-shadow:
+0 8px 30px rgba(0,0,0,0.05);
+
+text-align:center;
+
+}
+
+.contact-box h2{
+
+font-size:2em;
+
+font-weight:600;
+
+color:#c28b00;
+
+margin-bottom:12px;
+
+}
+
+.contact-box p{
+
+font-size:14px;
+
+color:#7b6b47;
+
+margin-bottom:30px;
+
+}
+
+/* ================= BLOG ================= */
+
+.blog{
+
+background:white;
+
+padding:28px;
+
+border-radius:28px;
+
+box-shadow:
+0 8px 22px rgba(0,0,0,0.05);
+
+transition:0.3s;
+
+}
+
+.blog:hover{
+transform:translateY(-8px);
+}
+
+.blog h3{
+
+font-size:1.2em;
+
+font-weight:600;
+
+color:#b57f00;
+
+margin-bottom:12px;
+
+}
+
+.blog p{
+
+font-size:14px;
+
+color:#756b55;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+padding:50px 20px;
+
+text-align:center;
+
+background:
+linear-gradient(
+135deg,
+#d8a700,
+#f2c037
+);
+
+color:white;
+
+}
+
+footer h3{
+
+font-size:1.6em;
+
+font-weight:600;
+
+margin-bottom:12px;
+
+}
+
+footer p{
+
+font-size:14px;
+
+opacity:0.95;
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.navbar{
+
+padding:15px;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.menu{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:14px;
+
+}
+
+.hero{
+padding:30px;
+}
+
+.hero h2{
+font-size:2.2em;
+}
+
+.hero p{
+font-size:0.95em;
+}
+
+.popup-btn{
+width:100%;
+font-size:14px;
+}
+
+.title h2{
+font-size:1.7em;
+}
+
+.contact-box{
+padding:35px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+<div class="logo-area">
+
+<!-- เว้นช่องใส่โลโก้ -->
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1614.jpg?w=1024"
+alt="โลโก้กระบี่"
+class="logo-img">
+
+<div class="logo-text">
+
+<h1>เที่ยวกระบี่</h1>
+
+<p>Krabi Travel Guide</p>
+
+</div>
+
+</div>
+
+<div class="menu">
+
+<a href="#">หน้าแรก</a>
+<a href="#travel">ที่เที่ยว</a>
+<a href="#service">บริการรถ</a>
+<a href="#blog">บทความ</a>
+<a href="#contact">ติดต่อ</a>
+
+</div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<header>
+
+<!-- เว้นช่องใส่รูปพื้นหลัง -->
+<img src="YOUR-HERO-IMAGE.jpg"
+alt="เที่ยวกระบี่"
+class="hero-bg">
+
+<div class="overlay"></div>
+
+<div class="hero">
+
+<h2>เที่ยวกระบี่</h2>
+
+<p>
+
+สัมผัสเสน่ห์ทะเลใต้ น้ำทะเลใส หาดทรายขาว เกาะสวยระดับโลก และธรรมชาติที่เงียบสงบ พร้อมบริการรถเที่ยวกระบี่แบบส่วนตัว เดินทางสะดวก ปลอดภัย และตอบโจทย์ทุกสไตล์การท่องเที่ยว
+
+</p>
+
+<!-- ปุ่ม Pop Up -->
+
+<div class="popup-contact">
+
+<a href="tel:0636385818"
+class="popup-btn call-btn">
+
+📞 โทร 063-638-5818
+
+</a>
+
+<a href="https://line.me/ti/p/N3Gtj86LCL"
+class="popup-btn line-btn">
+
+💬 ติดต่อ LINE
+
+</a>
+
+<a href="https://wa.me/66636385818"
+class="popup-btn whatsapp-btn">
+
+🟢 ติดต่อ WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ================= TRAVEL ================= -->
+
+<section id="travel">
+
+<div class="title">
+
+<h2>ที่เที่ยวกระบี่ยอดนิยม 2026</h2>
+
+<p>
+
+รวมจุดเช็กอินทะเลกระบี่ เกาะชื่อดัง คาเฟ่ริมทะเล และสถานที่ท่องเที่ยวธรรมชาติยอดนิยมที่นักท่องเที่ยวไม่ควรพลาด
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<!-- CARD 1 -->
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1615.jpg?w=1024"
+alt="อ่าวนาง"
+class="card-img">
+
+<div class="card-content">
+
+<h3>อ่าวนาง</h3>
+
+<p>
+
+อ่าวนางเป็นศูนย์กลางการท่องเที่ยวสำคัญของจังหวัดกระบี่ เต็มไปด้วยร้านอาหาร คาเฟ่ โรงแรม และจุดชมวิวทะเลที่สวยงาม เหมาะสำหรับการพักผ่อนและชมพระอาทิตย์ตกริมชายหาด
+
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1617.jpg?w=1024"
+alt="เกาะพีพี"
+class="card-img">
+
+<div class="card-content">
+
+<h3>เกาะพีพี</h3>
+
+<p>
+
+เกาะพีพีเป็นหนึ่งในเกาะที่มีชื่อเสียงระดับโลก น้ำทะเลสีฟ้าใสและธรรมชาติที่สวยงาม เหมาะสำหรับดำน้ำ เล่นน้ำทะเล และพักผ่อนท่ามกลางบรรยากาศสุดพรีเมียม
+
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1618.jpg?w=1024"
+alt="หาดไร่เลย์"
+class="card-img">
+
+<div class="card-content">
+
+<h3>หาดไร่เลย์</h3>
+
+<p>
+
+หาดไร่เลย์โดดเด่นด้วยหน้าผาหินปูนสูงตระการตา น้ำทะเลใส และบรรยากาศเงียบสงบ เป็นสวรรค์ของนักปีนผาและนักท่องเที่ยวที่ต้องการพักผ่อนอย่างแท้จริง
+
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1619.jpg?w=1024"
+alt="สระมรกต"
+class="card-img">
+
+<div class="card-content">
+
+<h3>สระมรกต</h3>
+
+<p>
+
+สระมรกตเป็นแหล่งท่องเที่ยวธรรมชาติชื่อดังของกระบี่ น้ำใสสีเขียวมรกต รายล้อมด้วยป่าไม้ธรรมชาติ เหมาะสำหรับเล่นน้ำและพักผ่อนในบรรยากาศสดชื่น
+
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD 5 -->
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1621.jpg?w=1024"
+alt="ทะเลแหวก"
+class="card-img">
+
+<div class="card-content">
+
+<h3>ทะเลแหวก</h3>
+
+<p>
+
+ทะเลแหวกเป็นปรากฏการณ์ธรรมชาติที่มีชื่อเสียงของกระบี่ สามารถเดินเชื่อมระหว่างเกาะได้ในช่วงน้ำลด เป็นจุดถ่ายรูปยอดนิยมของนักท่องเที่ยวทั่วโลก
+
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD 6 -->
+
+<div class="card">
+
+<img src="https://mongkol20010.wordpress.com/wp-content/uploads/2025/10/1623.jpg?w=1024"
+alt="วัดถ้ำเสือ"
+class="card-img">
+
+<div class="card-content">
+
+<h3>วัดถ้ำเสือ</h3>
+
+<p>
+
+วัดถ้ำเสือเป็นสถานที่ศักดิ์สิทธิ์และจุดชมวิวชื่อดังของกระบี่ นักท่องเที่ยวสามารถขึ้นบันไดเพื่อชมวิวภูเขาและเมืองกระบี่แบบพาโนรามาได้อย่างสวยงาม
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICE ================= -->
+
+<section id="service">
+
+<div class="contact-box">
+
+<h2>บริการรถเที่ยวกระบี่</h2>
+
+<p>
+
+บริการรถเที่ยวกระบี่พร้อมคนขับมืออาชีพ เดินทางสะดวก ปลอดภัย และตรงเวลา เหมาะสำหรับเที่ยวอ่าวนาง เกาะพีพี หาดไร่เลย์ สระมรกต และจุดเช็กอินยอดนิยมทั่วกระบี่
+
+📞 จองง่าย ติดต่อได้ทันทีผ่าน โทรศัพท์ / LINE / WhatsApp
+
+</p>
+
+<div class="popup-contact">
+
+<a href="tel:+66636385818"
+class="popup-btn call-btn">
+
+📞 โทร 063-638-5818
+
+</a>
+
+<a href="https://line.me/ti/p/N3Gtj86LCL"
+class="popup-btn line-btn">
+
+💬 ติดต่อ LINE
+
+</a>
+
+<a href="https://wa.me/66636385818"
+class="popup-btn whatsapp-btn">
+
+🟢 ติดต่อ WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= BLOG ================= -->
+
+<section id="blog">
+
+<div class="title">
+
+<h2>บทความท่องเที่ยวกระบี่</h2>
+
+<p>
+
+อัปเดตข้อมูลท่องเที่ยวกระบี่ คาเฟ่ริมทะเล จุดชมวิว และเส้นทางยอดนิยมสำหรับนักท่องเที่ยวที่ต้องการเที่ยวกระบี่แบบครบทุกมิติ
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="blog">
+
+<h3>เที่ยวกระบี่หน้าร้อน</h3>
+
+<p>
+
+ช่วงหน้าร้อนของกระบี่ถือเป็นฤดูกาลยอดนิยมสำหรับการเที่ยวทะเล น้ำทะเลใส ฟ้าสวย และเหมาะสำหรับกิจกรรมดำน้ำ เล่นน้ำทะเล และล่องเรือชมเกาะต่าง ๆ ทั่วทะเลอันดามัน
+
+</p>
+
+</div>
+
+<div class="blog">
+
+<h3>คาเฟ่ริมทะเลกระบี่</h3>
+
+<p>
+
+คาเฟ่ริมทะเลกระบี่กำลังได้รับความนิยมอย่างมาก ด้วยวิวทะเลที่สวยงาม บรรยากาศเงียบสงบ และมุมถ่ายรูปสุดพรีเมียม เหมาะสำหรับสายคาเฟ่และสายถ่ายรูปโดยเฉพาะ
+
+</p>
+
+</div>
+
+<div class="blog">
+
+<h3>เที่ยวเกาะพีพี</h3>
+
+<p>
+
+เกาะพีพีเป็นหนึ่งในจุดหมายปลายทางระดับโลกของประเทศไทย โดดเด่นด้วยทะเลสีฟ้าใส ธรรมชาติที่อุดมสมบูรณ์ และกิจกรรมทางทะเลที่ครบครัน เหมาะสำหรับทั้งการพักผ่อนและท่องเที่ยวเชิงผจญภัย
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="contact-box">
+
+<h2>ติดต่อเรา</h2>
+
+<p>
+
+สอบถามข้อมูลท่องเที่ยวกระบี่ บริการรถเที่ยวกระบี่ หรือวางแผนทริปส่วนตัวได้ตลอดเวลา
+
+</p>
+
+<div class="popup-contact">
+
+<a href="tel:+66636385818"
+class="popup-btn call-btn">
+
+📞 โทรศัพท์
+
+</a>
+
+<a href="https://line.me/ti/p/N3Gtj86LCL"
+class="popup-btn line-btn">
+
+💬 LINE
+
+</a>
+
+<a href="https://wa.me/66636385818"
+class="popup-btn whatsapp-btn">
+
+🟢 WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>เที่ยวกระบี่ 2026</h3>
+
+<p>
+
+รวมที่เที่ยวทะเล คาเฟ่ และบริการรถเที่ยวกระบี่ครบวงจร พร้อมดูแลทุกการเดินทางของคุณอย่างมืออาชีพ
+
+</p>
+
+<br>
+
+<p>
+
+📞 063-638-5818
+
+</p>
+
+<p>
+
+Krabi Travel Guide Thailand
+
+</p>
+
+</footer>
+
+</body>
+</html>
 
